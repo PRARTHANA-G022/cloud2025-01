@@ -19,6 +19,10 @@ resource "google_storage_bucket" "my_bucket" {
     versioning {
       enabled = true
     }
+    labels = {
+      environment = "student-lab"
+      managed_by = "terraform"
+    }
   
 }
 
